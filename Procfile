@@ -1,2 +1,2 @@
 web: python manage.py migrate && gunicorn
-realestate.wsgi
+django_real_estate_manager.wsgi
