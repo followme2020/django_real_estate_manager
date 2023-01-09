@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Ap. Number : {{ apartment.apartment_number }}</h1>
+
+  <p><strong>Building :</strong> <a href="">{{ apartment.building }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Apartment :</strong>  {{ apartment.apartment_number }}</p>
+  <p><strong>Floor :</strong> {{ apartment.floor }}</p>
+  <p><strong>Bedrooms :</strong> {{ apartment.bedrooms }}</p>
+  <p><strong>Gross covered area (sq.m) :</strong> {{ apartment.covered_gross }}</p>
+  <p><strong>Balcony (sq.m) :</strong> {{ apartment.balcony }}</p>
+  <p><strong>Position :</strong> {{ apartment.position }}</p>
+  <p><strong>Price :</strong> {{ apartment.price_in_gbp }} &#163; GBP </p>
+
+{% endblock %}

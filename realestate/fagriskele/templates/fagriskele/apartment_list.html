@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Apartment List</h1>
+  {% if apartment_list %}
+  <ul>
+    {% for apartment in apartment_list %}
+      <li>
+        <a href="{{ apartment.get_absolute_url }}">{{ apartment.id }}</a> ({{apartment.apartment_number}})
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no apartments in the app.</p>
+  {% endif %}
+{% endblock %}
