@@ -28,9 +28,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://djangorealestatemanager-production.up.railway.app']
+ALLOWED_HOSTS = ['djangorealestatemanager-production.up.railway.app']
 
-CSRF_TRUSTED_ORIGINS = ['https://djangorealestatemanager-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['djangorealestatemanager-production.up.railway.app']
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 # Application definition
