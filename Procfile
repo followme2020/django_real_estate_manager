@@ -1,1 +1,1 @@
-web: python3 manage.py migrate && gunicorn 'realestate.wsgi'
+web: gunicorn realestate.wsgi --log-file -
