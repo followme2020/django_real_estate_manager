@@ -30,7 +30,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['djangorealestatemanager-production.up.railway.app']
 
-CSRF_TRUSTED_ORIGINS = ['djangorealestatemanager-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://djangorealestatemanager-production.up.railway.app']
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 # Application definition
@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = "static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, '/fagriskele/static'),
 ]
 
 # Default primary key field type
