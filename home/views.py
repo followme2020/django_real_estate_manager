@@ -14,15 +14,16 @@ def say_cheese(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
+            form.save()
             cd = form.cleaned_data
             # assert False
             con = get_connection('django.core.mail.backends.console.EmailBackend')
             send_mail(
-                cd['firstname'] + cd['lastname'],
+                cd['firstname'] + ' ' + cd['lastname'],
                 cd['message'],
                 cd['email'],
                 ['to@corporate.com'],
-                cd['phonenum'],
+                cd['phone_number'],
                 connection=con
             )
             return HttpResponseRedirect('/home/shalom?submitted=True')
